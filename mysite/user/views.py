@@ -1,6 +1,7 @@
 from django.core import serializers
 from django.views.decorators.http import require_http_methods
 from .models import *
+from ..vote.models import *
 import json
 from django.http import JsonResponse
 from django.contrib.auth.hashers import make_password
@@ -23,7 +24,7 @@ def login(request):
     user = User.objects.filter(id=id, password=password)
     data = {
         'code': '200',
-        'msg': '',
+        'msg': '登录成功',
         'data': list(user)
     }
     return JsonResponse(data)
@@ -36,9 +37,68 @@ def logout(request):
 
 @require_http_methods(["POST"])
 def register(request):
-    return
+    id = request.POST.get('id')
+    name = request.POST.get('name')
+    password = request.POST.get('password')
+    user = User.objects.get(id=id)
+    if user:
+        data = {
+            'code': -1,
+            'msg': '该用户已被注册',
+            'data': ''
+        }
+    else:
+        user = User(id=id, name=name, password=password)
+        user.save(force_insert=True)
+        data = {
+            'code': 200,
+            'msg': '注册成功',
+            'data': json.dumps(user)
+        }
+        return JsonResponse(data)
 
 
 @require_http_methods(["POST"])
 def vote(request):
-    return
+    id = request.POST.get('id')
+    candidate_id = request.POST.get('candidate_id')
+    user = User.objects.get(id=id)
+    user.vote_candidate = candidate_id
+    user.save(force_update=True)
+    state_id = user.state
+    ticket = Vote.objects.get(state_id=state_id, candidate_id=candidate_id)
+    ticket.vote_num += 1
+    ticket.save(force_update=True)
+    data = {
+        'code': 200,
+        'msg': '投票成功',
+        'data': {list(user), list(ticket)}
+    }
+    return JsonResponse(data)
+
+
+def page_not_found(request):
+    data = {
+        'code': 404,
+        'msg': '请求404错误',
+        'data': ''
+    }
+    return JsonResponse(data)
+
+
+def page_error(request):
+    data = {
+        'code': 500,
+        'msg': '请求500错误',
+        'data': ''
+    }
+    return JsonResponse(data)
+
+
+def permission_denied(request):
+    data = {
+        'code': 403,
+        'msg': '请求403错误',
+        'data': ''
+    }
+    return JsonResponse(data)

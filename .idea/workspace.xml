@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e47506a-4a69-48d0-92bb-efd68629af0e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/vote/migrations/0001_initial.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/news/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/news/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/news/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/news/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/news/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/news/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/user/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/user/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/user/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/user/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/user/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/vote/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/vote/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +38,13 @@
         <item name="Django default" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="element: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Django default" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="element: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="vote_vote: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -335,7 +333,7 @@
       <workItem from="1606139415528" duration="6007000" />
       <workItem from="1606177521516" duration="159000" />
       <workItem from="1606177757219" duration="251000" />
-      <workItem from="1606178017666" duration="6927000" />
+      <workItem from="1606178017666" duration="14483000" />
     </task>
     <servers />
   </component>
