@@ -1,9 +1,9 @@
 from django.core import serializers
 from django.views.decorators.http import require_http_methods
 from .models import *
-from ..vote.models import *
+from vote.models import *
 import json
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
 from django.contrib.auth.hashers import make_password
 
 
@@ -22,9 +22,13 @@ def login(request):
     password = request.POST.get("password")
     password = make_password(password)
     user = User.objects.filter(id=id, password=password)
+    if user.exists():
+        msg = '登录成功'
+    else:
+        msg = '登录失败'
     data = {
         'code': '200',
-        'msg': '登录成功',
+        'msg': msg,
         'data': list(user)
     }
     return JsonResponse(data)
@@ -77,28 +81,3 @@ def vote(request):
     return JsonResponse(data)
 
 
-def page_not_found(request):
-    data = {
-        'code': 404,
-        'msg': '请求404错误',
-        'data': ''
-    }
-    return JsonResponse(data)
-
-
-def page_error(request):
-    data = {
-        'code': 500,
-        'msg': '请求500错误',
-        'data': ''
-    }
-    return JsonResponse(data)
-
-
-def permission_denied(request):
-    data = {
-        'code': 403,
-        'msg': '请求403错误',
-        'data': ''
-    }
-    return JsonResponse(data)
