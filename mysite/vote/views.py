@@ -7,6 +7,7 @@ from django.views.decorators.http import require_http_methods
 from django.conf import *
 from .models import State, Candidate, Vote
 from django.core.exceptions import *
+from utils.UtilException import UtilException
 import json
 
 
@@ -18,7 +19,7 @@ def queryState(request, id=None):
         else:
             state = list(State.objects.values())
     except ObjectDoesNotExist:
-        raise Exception('获取State失败')
+        raise UtilException(code=-1, msg='获取State失败')
     else:
         data = {
             'status': 200,
@@ -37,7 +38,7 @@ def queryCandidate(request, id=None):
         else:
             candidate = list(Candidate.objects.values())
     except ObjectDoesNotExist:
-        raise Exception(-1, '获取Candidate失败')
+        raise UtilException(code=-1, msg='获取Candidate失败')
     else:
         data = {
             'status': 200,

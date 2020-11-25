@@ -4,6 +4,7 @@ from django.http import JsonResponse, HttpResponse
 from django.utils.deprecation import MiddlewareMixin
 from django.db.models.base import *
 from django.conf import settings
+from .UtilException import UtilException
 
 
 class middleware(MiddlewareMixin):
@@ -27,9 +28,12 @@ class middleware(MiddlewareMixin):
         elif isinstance(exception, FieldDoesNotExist):
             msg = '查询参数有误'
             code = -2
+        elif isinstance(exception, UtilException):
+            code = exception.code
+            msg = exception.msg
         else:
-            code = exception.args[0]
-            msg = exception.args[1]
+            code = -1
+            msg = str(exception)
         data = {
             'status': 200,
             'code': code,
