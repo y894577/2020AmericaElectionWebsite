@@ -24,13 +24,11 @@ def user(request):
 def login(request):
     id = request.POST.get('id')
     password = request.POST.get('password')
-    # password = make_password(password)
+    password = make_password(password)
     try:
         user = User.objects.get(id=id, password=password)
     except ObjectDoesNotExist:
-        msg = '登录失败'
-        code = -1
-        user = {'id': id, 'password': password}
+        raise Exception(-1, '登录失败')
     else:
         msg = '登录成功'
         code = 1
@@ -52,8 +50,7 @@ def logout(request):
         msg = '退出登录成功'
         code = 1
     else:
-        msg = '退出登录失败'
-        code = -3
+        raise Exception(-3, '退出登录失败')
     data = {
         'status': 200,
         'code': code,
@@ -71,7 +68,7 @@ def register(request):
     password = make_password(password)
     state = request.POST.get('state')
     try:
-        user = User.objects.get(id=id)
+        User.objects.get(id=id)
     except ObjectDoesNotExist:
         state = State.objects.get(id=state)
         user = User(id=id, name=name, password=password, state=state)
@@ -79,8 +76,7 @@ def register(request):
         msg = '注册成功'
         code = 1
     else:
-        msg = '该用户已被注册'
-        code = -3
+        raise Exception(-3, '该用户已被注册')
     data = {
         'status': 200,
         'code': code,
@@ -95,14 +91,12 @@ def vote(request):
     print(request.session.get(settings.USER_SESSION))
     id = str(request.session.get(settings.USER_SESSION).get('id'))
     if id != request.POST.get('id'):
-        raise PermissionError
+        raise Exception(-2, 'session与提交id不一致')
     candidate_id = request.POST.get('candidate_id')
     candidate = Candidate.objects.get(id=candidate_id)
     user = User.objects.get(id=id)
     if user.vote_candidate is not None:
-        msg = '该用户已完成投票'
-        code = -3
-        data = [model_to_dict(user)]
+        raise Exception(-3, '该用户已完成投票')
     else:
         user.vote_candidate = candidate
         user.save(force_update=True)

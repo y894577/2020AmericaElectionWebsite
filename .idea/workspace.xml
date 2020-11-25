@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e47506a-4a69-48d0-92bb-efd68629af0e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mysite/user/migrations/0002_auto_20201125_1554.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/news/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/news/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/news/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/news/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/user/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/user/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/user/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/utils/handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/utils/handler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/utils/middleware.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/utils/middleware.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/vote/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/vote/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/vote/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/vote/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -364,7 +359,7 @@
       <workItem from="1606177521516" duration="159000" />
       <workItem from="1606177757219" duration="251000" />
       <workItem from="1606178017666" duration="38167000" />
-      <workItem from="1606267481044" duration="16126000" />
+      <workItem from="1606267481044" duration="23136000" />
     </task>
     <servers />
   </component>
@@ -403,22 +398,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="775" y="172" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1606267558228" />
-    <state width="1493" height="113" key="GridCell.Tab.0.bottom" timestamp="1606291080618">
+    <state width="1493" height="113" key="GridCell.Tab.0.bottom" timestamp="1606299074767">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="113" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606291080618" />
-    <state width="1493" height="113" key="GridCell.Tab.0.center" timestamp="1606291080618">
+    <state width="1493" height="113" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606299074767" />
+    <state width="1493" height="113" key="GridCell.Tab.0.center" timestamp="1606299074767">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="113" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606291080618" />
-    <state width="1493" height="113" key="GridCell.Tab.0.left" timestamp="1606291080618">
+    <state width="1493" height="113" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606299074767" />
+    <state width="1493" height="113" key="GridCell.Tab.0.left" timestamp="1606299074767">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="113" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606291080618" />
-    <state width="1493" height="113" key="GridCell.Tab.0.right" timestamp="1606291080618">
+    <state width="1493" height="113" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606299074767" />
+    <state width="1493" height="113" key="GridCell.Tab.0.right" timestamp="1606299074767">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="113" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606291080618" />
+    <state width="1493" height="113" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606299074767" />
     <state x="22" y="519" width="1464" height="232" key="GridCell.Tab.1.bottom" timestamp="1606275816276">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -476,11 +471,6 @@
           <line>124</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/mysite/user/views.py</url>
-          <line>66</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -489,7 +479,7 @@
     <SUITE FILE_PATH="coverage/project$news_makemigrations.coverage" NAME="news makemigrations Coverage Results" MODIFIED="1606181412878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/project$sqlmigrate.coverage" NAME="sqlmigrate Coverage Results" MODIFIED="1606118989496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mysite" />
     <SUITE FILE_PATH="coverage/project$0001_initial.coverage" NAME="0001_initial Coverage Results" MODIFIED="1606119283458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mysite/scnu_se_website/migrations" />
-    <SUITE FILE_PATH="coverage/project$user_makemigrations_.coverage" NAME="user makemigrations  Coverage Results" MODIFIED="1606291041578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mysite" />
+    <SUITE FILE_PATH="coverage/project$user_makemigrations_.coverage" NAME="user makemigrations  Coverage Results" MODIFIED="1606299070124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mysite" />
     <SUITE FILE_PATH="coverage/project$makemigrations_.coverage" NAME="website makemigrations  Coverage Results" MODIFIED="1606119478681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mysite" />
     <SUITE FILE_PATH="coverage/project$migrate_.coverage" NAME="sqlmigrate Coverage Results" MODIFIED="1605698578037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mysite" />
     <SUITE FILE_PATH="coverage/project$tests.coverage" NAME="tests Coverage Results" MODIFIED="1606111577361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mysite/testapp" />
