@@ -1,3 +1,4 @@
+import json
 from django.core import serializers
 from django.forms import model_to_dict
 from django.http import JsonResponse, HttpResponse
@@ -5,10 +6,9 @@ from django.shortcuts import render
 from user.models import User
 from django.views.decorators.http import require_http_methods
 from django.conf import *
-from .models import State, Candidate, Vote
 from django.core.exceptions import *
 from utils.UtilException import UtilException
-import json
+from .models import State, Candidate, Vote
 
 
 @require_http_methods(["GET"])

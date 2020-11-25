@@ -5,9 +5,9 @@ from django.shortcuts import render
 from django.forms.models import model_to_dict
 from django.views.decorators.http import require_http_methods
 from django.core.exceptions import *
+from django.db.models import F
 from utils.UtilException import UtilException
 from .models import *
-from django.db.models import F
 
 
 @require_http_methods(["GET"])
@@ -36,7 +36,6 @@ def queryComment(request, id=None, page=1, size=20):
     page = int(page)
     size = int(size)
     try:
-
         comment = Comment.objects.select_related('user_id').filter(news_id=id)[(page - 1) * size:page * size].values(
             'time', 'content', 'news_id', user_name=F('user_id__name'))
     except ObjectDoesNotExist:

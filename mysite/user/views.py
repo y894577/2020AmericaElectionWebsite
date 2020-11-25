@@ -1,15 +1,16 @@
+import json
+
 from django.core import serializers
 from django.forms import model_to_dict
 from django.views.decorators.http import require_http_methods
-from .models import *
-from vote.models import *
-import json
 from django.http import JsonResponse, HttpResponse
 from django.contrib.auth.hashers import make_password, check_password
 from django.conf import settings
 from django.core.exceptions import *
 from django.shortcuts import get_object_or_404
 from utils.UtilException import UtilException
+from vote.models import *
+from .models import *
 
 
 def user(request):
