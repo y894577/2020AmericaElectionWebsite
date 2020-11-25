@@ -6,7 +6,7 @@ from django.http import HttpResponse
 
 def server_error(request):
     data = {
-        'code': 500,
+        'status': 500,
         'msg': '500 server error'
     }
     return HttpResponse(json.dumps(data), content_type="application/json")
@@ -15,7 +15,7 @@ def server_error(request):
 def page_not_found(request, exception):
     print(exception)
     data = {
-        'code': 404,
+        'status': 404,
         'msg': '404 not found'
     }
     return HttpResponse(json.dumps(data), content_type="application/json")
@@ -23,8 +23,8 @@ def page_not_found(request, exception):
 
 def bad_request(request, exception):
     data = {
-        'code': 400,
-        'msg': ''
+        'status': 400,
+        'msg': '400 bad request'
     }
     return HttpResponse(json.dumps(data), content_type="application/json")
 
@@ -32,7 +32,7 @@ def bad_request(request, exception):
 def permission_denied(request, exception):
     print(exception)
     data = {
-        'code': 403,
+        'status': 403,
         'msg': '403 permission denied'
     }
     return HttpResponse(json.dumps(data), content_type="application/json")

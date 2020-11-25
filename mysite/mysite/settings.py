@@ -78,7 +78,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
 # Database
-# https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
     'default': {
@@ -127,3 +126,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+SESSION_ENGINE = 'django.contrib.sessions.backends.cached_db'
+
+#Global
+USER_SESSION = 'USER_SESSION'

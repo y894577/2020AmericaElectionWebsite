@@ -1,40 +1,39 @@
 from django.core import serializers
+from django.forms import model_to_dict
 from django.http import JsonResponse, HttpResponse
 from django.shortcuts import render
+from user.models import User
+from django.views.decorators.http import require_http_methods
+from django.conf import *
 from .models import State, Candidate, Vote
 import json
 
 
-def index(request):
-    result = State.objects.values()
+@require_http_methods(["GET"])
+def queryState(request, id=None):
+    if id is not None:
+        state = model_to_dict(State.objects.get(id=id))
+    else:
+        state = list(State.objects.values())
     data = {
-        'code': '200',
-        'data': list(result)
+        'status': '200',
+        'code': 1,
+        'msg': '获取State信息成功',
+        'data': state
     }
     return JsonResponse(data)
 
 
-def getStateList(request):
-    result = State.objects.values()
+@require_http_methods(["GET"])
+def queryCandidate(request, id=None):
+    if id is not None:
+        candidate = model_to_dict(Candidate.objects.get(id=id))
+    else:
+        candidate = list(Candidate.objects.values())
     data = {
-        'code': '200',
-        'msg': '获取StateList成功',
-        'data': list(result)
+        'status': '200',
+        'code': 1,
+        'msg': '获取Candidate信息成功',
+        'data': candidate
     }
     return JsonResponse(data)
-
-
-def getCandidateList(request):
-    result = Candidate.objects.values()
-    data = {
-        'code': '200',
-        'msg': '获取CandidateList成功',
-        'data': list(result)
-    }
-    return JsonResponse(data)
-
-
-def queryCandidate(request):
-    result = Candidate.objects.filter()
-
-    return
