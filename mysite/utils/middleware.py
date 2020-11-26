@@ -9,16 +9,16 @@ from .UtilException import UtilException
 
 class middleware(MiddlewareMixin):
 
-    def process_request(self, request):
-        if settings.USER_LOGIN_SESSION in request.session:
-            pass
-        else:
-            data = {
-                'status': 200,
-                'code': 0,
-                'msg': '用户未登录'
-            }
-            return JsonResponse(data)
+    # def process_request(self, request):
+    #     if settings.USER_LOGIN_SESSION in request.session:
+    #         pass
+    #     else:
+    #         data = {
+    #             'status': 200,
+    #             'code': 0,
+    #             'msg': '用户未登录'
+    #         }
+    #         return JsonResponse(data)
 
     def process_exception(self, request, exception):
         print()

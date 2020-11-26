@@ -36,13 +36,12 @@ def login(request):
         else:
             msg = '登录成功'
             code = 1
-            user = model_to_dict(user)
             request.session[settings.USER_SESSION] = user
     data = {
         'status': 200,
         'code': code,
         'msg': msg,
-        'data': user
+        'data': user.info
     }
     return JsonResponse(data)
 
@@ -85,7 +84,7 @@ def register(request):
         'status': 200,
         'code': code,
         'msg': msg,
-        'data': model_to_dict(user)
+        'data': user.info
     }
     return JsonResponse(data)
 
@@ -113,7 +112,7 @@ def vote(request):
         ticket.save(force_update=True)
         msg = '投票成功'
         code = 1
-        data = {'user': model_to_dict(user), 'vote': model_to_dict(ticket)}
+        data = {'user': user.info, 'vote': model_to_dict(ticket)}
     data = {
         'status': 200,
         'code': code,
