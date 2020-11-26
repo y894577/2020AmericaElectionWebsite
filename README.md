@@ -33,40 +33,40 @@
 
 ### 目录结构
 
-> |-- LICENSE
-> |-- README.md
-> |-- mysite
->     |-- manage.py
->     |-- mysite
->     |   |-- asgi.py
->     |   |-- settings.py
->     |   |-- urls.py
->     |   |-- wsgi.py
->     |-- news
->     |   |-- admin.py
->     |   |-- apps.py
->     |   |-- models.py
->     |   |-- tests.py
->     |   |-- urls.py
->     |   |-- views.py
->     |-- user
->     |   |-- admin.py
->     |   |-- apps.py
->     |   |-- models.py
->     |   |-- tests.py
->     |   |-- urls.py
->     |   |-- views.py
->     |-- utils
->     |   |-- UtilException.py
->     |   |-- handler.py
->     |   |-- middleware.py
->     |-- vote
->         |-- admin.py
->         |-- apps.py
->         |-- models.py
->         |-- tests.py
->         |-- urls.py
->         |-- views.py
+|-- LICENSE
+|-- README.md
+|-- mysite
+ |-- manage.py
+ |-- mysite
+ |   |-- asgi.py
+ |   |-- settings.py
+ |   |-- urls.py
+ |   |-- wsgi.py
+ |-- news
+ |   |-- admin.py
+ |   |-- apps.py
+ |   |-- models.py
+ |   |-- tests.py
+ |   |-- urls.py
+ |   |-- views.py
+ |-- user
+ |   |-- admin.py
+ |   |-- apps.py
+ |   |-- models.py
+ |   |-- tests.py
+ |   |-- urls.py
+ |   |-- views.py
+ |-- utils
+ |   |-- UtilException.py
+ |   |-- handler.py
+ |   |-- middleware.py
+ |-- vote
+     |-- admin.py
+     |-- apps.py
+     |-- models.py
+     |-- tests.py
+     |-- urls.py
+     |-- views.py
 
 ### 架构说明
 
@@ -115,7 +115,7 @@ vote代表选票，对获取候选人，获取每个州的信息等一系列操�
 
 ## 数据库
 
-![element](element.png)
+![element](https://github.com/y894577/2020AmericaElectionWebsite/blob/main/element.png)
 
 
 
