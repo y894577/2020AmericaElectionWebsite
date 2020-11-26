@@ -22,3 +22,8 @@ urlpatterns = [
     path('news/', include('news.urls')),
     path('vote/', include('vote.urls')),
 ]
+
+handler404 = 'utils.handler.page_not_found'
+handler400 = 'utils.handler.bad_request'
+handler403 = 'utils.handler.permission_denied'
+handler500 = 'utils.handler.server_error'

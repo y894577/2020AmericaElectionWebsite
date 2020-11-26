@@ -12,6 +12,9 @@ class Candidate(models.Model):
 class State(models.Model):
     name = models.CharField(max_length=40)
 
+    def info(self):
+        return {id: self.id, name: self.name}
+
 
 class Vote(models.Model):
     candidate_id = models.ForeignKey(Candidate, on_delete=models.CASCADE)

@@ -1,0 +1,8 @@
+
+*.xml
+.idea
+mysite/user/__pycache__/views.cpython-37.pyc
+mysite/user/__pycache__/urls.cpython-37.pyc
+mysite/utils/__pycache__/__init__.cpython-37.pyc
+*.pyc
+mysite/mysite/__pycache__/settings.cpython-37.pyc
