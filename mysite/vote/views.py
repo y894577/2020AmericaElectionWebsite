@@ -18,7 +18,6 @@ from .models import State, Candidate, Vote
 def queryState(request, id=None):
     try:
         if id is not None:
-            # state = model_to_dict(State.objects.get(id=id))
             state = State.objects.get(id=id)
             vote = state.vote_set.filter().values(
                 'vote_num', 'candidate_id', candidate_name=F('candidate_id__name'))
