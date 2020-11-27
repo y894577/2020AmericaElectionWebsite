@@ -36,7 +36,7 @@ def login(request):
         else:
             msg = '登录成功'
             code = 1
-            request.session[settings.USER_SESSION] = user
+            request.session[settings.USER_SESSION] = user.info
     data = {
         'status': 200,
         'code': code,

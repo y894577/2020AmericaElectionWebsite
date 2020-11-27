@@ -15,6 +15,8 @@ class User(models.Model):
             'id': self.id,
             'name': self.name,
             'vote_candidate': self.vote_candidate.name,
-            'state': self.state.name
+            'candidate_id': self.vote_candidate.id,
+            'state': self.state.name,
+            'state_id': self.state.id
         }
         return info
