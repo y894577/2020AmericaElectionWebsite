@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e47506a-4a69-48d0-92bb-efd68629af0e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/er.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/element.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/news/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/news/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/news/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/news/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/news/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/news/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/user/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/user/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -353,7 +347,7 @@
       <workItem from="1606178017666" duration="38167000" />
       <workItem from="1606267481044" duration="40447000" />
       <workItem from="1606352941870" duration="12806000" />
-      <workItem from="1606438459344" duration="5385000" />
+      <workItem from="1606438459344" duration="5972000" />
     </task>
     <servers />
   </component>
