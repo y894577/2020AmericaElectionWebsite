@@ -428,3 +428,49 @@ vote代表选票，对获取候选人，获取每个州的信息等一系列操�
 }
 ```
 
+---
+
+【需求】搜索新闻
+
+【请求方式】GET
+
+【URL】/news/search/{keyword}
+
+​				/news/search/{keyword}/offset/{page}/{size}
+
+【参数】keyword为搜索内容
+
+​				page: 当前页数 (1-based)
+
+​				size: 当前每页数量
+
+【说明】获取新闻列表，id为空默认返回全部
+
+​				不设置page和size后台默认返回20条
+
+​				默认按照time排序
+
+【返回】如果是单个则返回字典，如果是全部返回列表
+
+| code |     msg      |
+| :--: | :----------: |
+|  1   | 获取News成功 |
+|  -1  | 获取News失败 |
+
+```json
+{
+  "data": [
+    {
+      "user_id": "",
+      "user_name": "",
+      "user_state": "",
+      "time": "",
+      "content": "",
+      "news_id": ""
+    }
+  ]
+}
+```
+
+---
+
