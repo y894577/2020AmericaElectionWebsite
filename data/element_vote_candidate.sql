@@ -1,0 +1,12 @@
+INSERT INTO element.vote_candidate (id, name, introduction, information, party) VALUES (1, 'Donald Trump', 'Donald John Trump is the 45th and current president of the United States. Before entering politics, he was a businessman and television personality. Born and raised in Queens, New York City, Trump attended Fordham University for two years and received a bachelor''s degree in economics from the Wharton School of the University of Pennsylvania. He became president of his father Fred Trump''s real estate business in 1971, renamed it The Trump Organization, and expanded its operations to building or renovating skyscrapers, hotels, casinos, and golf courses. Trump later started various side ventures, mostly by licensing his name. Trump and his businesses have been involved in more than 4,000 state and federal legal actions, including six bankruptcies. He owned the Miss Universe brand of beauty pageants from 1996 to 2015, and produced and hosted the reality television series The Apprentice from 2004 to 2015.', 'Born: Jun 14, 1946 (age 74) · Queens, NY
+Height: 6 feet 3 inches
+Office: President of the United States - R (Since 2017)
+Spouse: Melania Trump (m. 2005) · Marla Maples (m. 1993 - 1999) · Ivana Trump (m. 1977 - 1992)
+Children: Ivanka Trump (Daughter) · Eric Trump (Son) · Tiffany Trump (Daughter) · Donald Trump Jr. (Son) · Barron Trump (Son)
+Education: Wharton School of the University of Pennsylvania (1966 - 1968) · Fordham University (1964 - 1966) · The Kew-Forest School (1951 - 1959) · New York Military Academy (1959 - 1964)', 'Republican Party');
+INSERT INTO element.vote_candidate (id, name, introduction, information, party) VALUES (2, 'Joe Biden', 'Joseph Robinette Biden Jr. is an American politician and the president-elect of the United States. He defeated incumbent president Donald Trump in the 2020 presidential election and will be inaugurated as the 46th president on January 20, 2021. A member of the Democratic Party, Biden served as the 47th vice president during the Obama administration from 2009 to 2017. He represented Delaware in the United States Senate from 1973 to 2009.', 'Born: Nov 20, 1942 (age 78) · Scranton, PA
+Inauguration date: January 20, 2021
+Transition plan: Build Back Better
+Spouse: Jill Biden (m. 1977) · Neilia Hunter (m. 1966 - 1972)
+Children: Beau Biden (Son) · Hunter Biden (Son) · Naomi Biden (Daughter) · Ashley Biden (Daughter)
+Successor: Mike Pence (Vice President)', 'Democratic Party');
