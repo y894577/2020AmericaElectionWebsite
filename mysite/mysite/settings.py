@@ -148,3 +148,5 @@ SESSION_ENGINE = 'django.contrib.sessions.backends.cached_db'
 
 # Global Session
 USER_SESSION = 'USER_SESSION'
+SESSION_COOKIE_AGE = 7200             # Session的cookie失效日期（2周）（数字为秒数）（默认）
+SESSION_EXPIRE_AT_BROWSER_CLOSE = False  # 是否关闭浏览器使得Session过期（默认）

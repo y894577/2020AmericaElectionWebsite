@@ -3,8 +3,8 @@ import datetime
 
 
 class News(models.Model):
-    title = models.CharField(max_length=100, null=True)
-    author = models.CharField(max_length=20, null=True)
+    title = models.TextField(null=True)
+    author = models.CharField(max_length=60, null=True)
     content = models.TextField(null=True)
     time = models.DateTimeField(default=datetime.datetime.now())
 

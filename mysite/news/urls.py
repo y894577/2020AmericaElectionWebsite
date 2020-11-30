@@ -2,6 +2,7 @@ from django.urls import path, re_path
 from . import views
 
 urlpatterns = [
+    path('', views.queryNews, name='queryNewsList'),
     re_path(r'^search/(?P<keyword>[\w-]+)/$', views.queryNews, name='queryNewsByCondition'),
     re_path(r'^search/(?P<keyword>[\w-]+)/offset/(?P<page>[1-9]|[1-9]\d*)/(?P<size>[1-9]|[1-9]\d*)/$',
             views.queryNews, name='queryNewsByKeyword'),
