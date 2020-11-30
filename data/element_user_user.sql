@@ -1,0 +1,2 @@
+INSERT INTO element.user_user (id, name, password, state_id, vote_candidate_id) VALUES (123, 'haha', '123456', 2, 1);
+INSERT INTO element.user_user (id, name, password, state_id, vote_candidate_id) VALUES (125, 'hello', 'pbkdf2_sha256$216000$2v87Uyd8WTsw$ZmobS5FpJISAVtDVZF1EaCX8I24DobnZm6t/AmClMMI=', 1, 1);

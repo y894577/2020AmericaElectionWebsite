@@ -1,0 +1,1 @@
+INSERT INTO element.news_comment (id, time, content, news_id_id, user_id_id) VALUES (1, '2020-11-25 17:17:14', '1564', 1, 123);
