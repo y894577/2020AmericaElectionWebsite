@@ -3,6 +3,7 @@ from . import views
 
 urlpatterns = [
     path('', views.queryNews, name='queryNewsList'),
+    path('comment/submit', views.comment, name='comment'),
     re_path(r'^search/(?P<keyword>[\w-]+)/$', views.queryNews, name='queryNewsByCondition'),
     re_path(r'^search/(?P<keyword>[\w-]+)/offset/(?P<page>[1-9]|[1-9]\d*)/(?P<size>[1-9]|[1-9]\d*)/$',
             views.queryNews, name='queryNewsByKeyword'),
@@ -12,4 +13,5 @@ urlpatterns = [
     path('<str:id>/comment', views.queryComment, name='queryCommentById'),
     re_path(r'^(?P<id>[\w-]+)/comment/offset/(?P<page>[1-9]|[1-9]\d*)/(?P<size>[1-9]|[1-9]\d*)/$',
             views.queryComment, name='queryCommentList'),
+
 ]

@@ -120,3 +120,4 @@ def vote(request):
         'data': data
     }
     return JsonResponse(data)
+
