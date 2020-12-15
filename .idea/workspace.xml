@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e47506a-4a69-48d0-92bb-efd68629af0e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mysite/news/migrations/0002_auto_20201127_1550.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/news/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/news/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/news/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/news/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +98,7 @@
       <recent name="E:\why_homework\中级实作\project\mysite\user\utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.migrate">
+  <component name="RunManager" selected="Django server.server start">
     <configuration name="0001_initial" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -352,7 +349,8 @@
       <workItem from="1606438459344" duration="9374000" />
       <workItem from="1606647926170" duration="1244000" />
       <workItem from="1606701863630" duration="599000" />
-      <workItem from="1606722389543" duration="725000" />
+      <workItem from="1606722389543" duration="1263000" />
+      <workItem from="1608037919101" duration="3806000" />
     </task>
     <servers />
   </component>
@@ -391,22 +389,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="775" y="172" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1606357428213" />
-    <state width="1493" height="169" key="GridCell.Tab.0.bottom" timestamp="1606468602855">
+    <state width="1493" height="169" key="GridCell.Tab.0.bottom" timestamp="1608041075372">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="169" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606468602855" />
-    <state width="1493" height="169" key="GridCell.Tab.0.center" timestamp="1606468602855">
+    <state width="1493" height="169" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608041075372" />
+    <state width="1493" height="169" key="GridCell.Tab.0.center" timestamp="1608041075372">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="169" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606468602855" />
-    <state width="1493" height="169" key="GridCell.Tab.0.left" timestamp="1606468602855">
+    <state width="1493" height="169" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608041075372" />
+    <state width="1493" height="169" key="GridCell.Tab.0.left" timestamp="1608041075372">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="169" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606468602855" />
-    <state width="1493" height="169" key="GridCell.Tab.0.right" timestamp="1606468602855">
+    <state width="1493" height="169" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608041075372" />
+    <state width="1493" height="169" key="GridCell.Tab.0.right" timestamp="1608041075372">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="169" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606468602855" />
+    <state width="1493" height="169" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608041075372" />
     <state x="22" y="519" width="1464" height="232" key="GridCell.Tab.1.bottom" timestamp="1606275816276">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -473,14 +471,14 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/project$settings.coverage" NAME="settings Coverage Results" MODIFIED="1606111585511" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mysite/mysite" />
-    <SUITE FILE_PATH="coverage/project$news_makemigrations.coverage" NAME="news makemigrations Coverage Results" MODIFIED="1606463405288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/project$news_makemigrations.coverage" NAME="news makemigrations Coverage Results" MODIFIED="1608038978149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/project$sqlmigrate.coverage" NAME="sqlmigrate Coverage Results" MODIFIED="1606118989496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mysite" />
     <SUITE FILE_PATH="coverage/project$0001_initial.coverage" NAME="0001_initial Coverage Results" MODIFIED="1606119283458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mysite/scnu_se_website/migrations" />
     <SUITE FILE_PATH="coverage/project$user_makemigrations_.coverage" NAME="user makemigrations  Coverage Results" MODIFIED="1606299070124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mysite" />
     <SUITE FILE_PATH="coverage/project$makemigrations_.coverage" NAME="website makemigrations  Coverage Results" MODIFIED="1606119478681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mysite" />
     <SUITE FILE_PATH="coverage/project$migrate_.coverage" NAME="sqlmigrate Coverage Results" MODIFIED="1605698578037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mysite" />
     <SUITE FILE_PATH="coverage/project$tests.coverage" NAME="tests Coverage Results" MODIFIED="1606111577361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mysite/testapp" />
-    <SUITE FILE_PATH="coverage/project$migrate.coverage" NAME="migrate Coverage Results" MODIFIED="1606463409871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mysite" />
+    <SUITE FILE_PATH="coverage/project$migrate.coverage" NAME="migrate Coverage Results" MODIFIED="1608038989608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mysite" />
     <SUITE FILE_PATH="coverage/project$vote_makemigrations.coverage" NAME="vote makemigrations Coverage Results" MODIFIED="1606181408358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

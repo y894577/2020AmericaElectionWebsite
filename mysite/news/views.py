@@ -40,9 +40,9 @@ def queryComment(request, id=None, page=1, size=20):
     page = int(page)
     size = int(size)
     try:
-        comment = Comment.objects.order_by('-time').select_related('user_id').filter(news_id=id)[
-                  (page - 1) * size:page * size].values(
-            'news_id', 'time', 'content', 'user_id', user_name=F('user_id__name'), user_state=F('user_id__state__name'))
+        comments = Comment.objects.order_by('-time').filter(news_id=id)[
+                   (page - 1) * size:page * size].values(
+            'news_id', 'time', 'content')
     except (ObjectDoesNotExist, IndexError):
         raise UtilException(code=-1, msg='获取Comment失败')
     else:
@@ -50,6 +50,29 @@ def queryComment(request, id=None, page=1, size=20):
             'status': 200,
             'code': 1,
             'msg': '获取Comment成功',
-            'data': list(comment)
+            'data': list(comments)
         }
+    return JsonResponse(data)
+
+
+@require_http_methods(["POST"])
+def comment(request):
+    content = request.POST.get('content')
+    news_id = request.POST.get('news_id')
+    try:
+        news = News.objects.get(id=news_id)
+    except Exception:
+        raise UtilException(code=-1, msg='该新闻不存在')
+    else:
+        try:
+            comments = Comment(content=content, news_id=news)
+            comments.save(force_insert=True)
+        except Exception:
+            raise UtilException(code=-1, msg='提交Comment失败')
+    data = {
+        'status': 200,
+        'code': 1,
+        'msg': '提交Comment成功',
+        'data': model_to_dict(comments)
+    }
     return JsonResponse(data)

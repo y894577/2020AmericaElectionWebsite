@@ -471,6 +471,36 @@ vote代表选票，对获取候选人，获取每个州的信息等一系列操�
   ]
 }
 ```
+【需求】提交
 
----
+【请求方式】GET
+
+【URL】/news/comment/submit
+
+【参数】content:评论内容
+
+​		news_id:新闻id
+
+【说明】提交评论
+
+【返回】返回字典
+
+| code |     msg      |
+| :--: | :----------: |
+|  1   | 提交Comment成功 |
+|  -1  | 提交Comment失败/News不存在 |
+
+```json
+{
+  "data": [
+    {
+      "time": "",
+      "content": "",
+      "news_id": ""
+    }
+  ]
+}
+```
+
+
 
